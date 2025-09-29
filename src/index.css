@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Leaflet CSS */
+@import 'leaflet/dist/leaflet.css';
+
+/* Adventure travel-inspired design system 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 214 31% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 214 31% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 31% 12%;
+
+    /* Ocean-inspired primary */
+    --primary: 195 85% 41%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 195 85% 65%;
+
+    /* Sunset secondary */
+    --secondary: 24 95% 53%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Adventure green */
+    --adventure: 142 76% 36%;
+    --adventure-foreground: 0 0% 100%;
+
+    /* Success green for done items */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Achievement blue */
+    --achievement: 221 83% 53%;
+    --achievement-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 20% 45%;
+
+    --accent: 33 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 195 85% 41%;
+
+    /* Travel gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(195 85% 41%), hsl(195 85% 65%));
+    --gradient-sunset: linear-gradient(135deg, hsl(24 95% 53%), hsl(33 100% 50%));
+    --gradient-adventure: linear-gradient(135deg, hsl(142 76% 36%), hsl(195 85% 41%));
+    --gradient-sky: linear-gradient(180deg, hsl(195 85% 65%), hsl(210 20% 98%));
+
+    /* Shadows with adventure colors */
+    --shadow-ocean: 0 10px 30px -10px hsl(195 85% 41% / 0.3);
+    --shadow-warm: 0 8px 25px -8px hsl(24 95% 53% / 0.4);
+    --shadow-glow: 0 0 40px hsl(195 85% 65% / 0.3);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 217 33% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 217 33% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217 33% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 195 85% 55%;
+    --primary-foreground: 217 33% 8%;
+    --primary-glow: 195 85% 75%;
+
+    --secondary: 24 95% 63%;
+    --secondary-foreground: 217 33% 8%;
+
+    --adventure: 142 76% 46%;
+    --adventure-foreground: 217 33% 8%;
+
+    --success: 142 71% 55%;
+    --success-foreground: 217 33% 8%;
+
+    --achievement: 221 83% 63%;
+    --achievement-foreground: 217 33% 8%;
+
+    --muted: 217 33% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 33 100% 60%;
+    --accent-foreground: 217 33% 8%;
+
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 217 33% 8%;
+
+    --border: 217 33% 15%;
+    --input: 217 33% 15%;
+    --ring: 195 85% 55%;
+
+    /* Dark mode gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(195 85% 55%), hsl(195 85% 75%));
+    --gradient-sunset: linear-gradient(135deg, hsl(24 95% 63%), hsl(33 100% 60%));
+    --gradient-adventure: linear-gradient(135deg, hsl(142 76% 46%), hsl(195 85% 55%));
+    --gradient-sky: linear-gradient(180deg, hsl(195 85% 75%), hsl(217 33% 8%));
+
+    --shadow-ocean: 0 10px 30px -10px hsl(195 85% 55% / 0.4);
+    --shadow-warm: 0 8px 25px -8px hsl(24 95% 63% / 0.5);
+    --shadow-glow: 0 0 40px hsl(195 85% 75% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
