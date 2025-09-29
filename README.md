@@ -4,7 +4,7 @@ Create your personal bucket list by clicking locations on an interactive map. Tr
 
 This repository is open for Hacktoberfest contributions.
 
-![App icon](public/icon.png)
+![App icon](public/preview.png)
 
 Author: Raisin Butter Labs
 
