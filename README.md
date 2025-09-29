@@ -104,15 +104,6 @@ Tips for a speedy review:
 -   Run `npm run lint` and fix issues before pushing.
 -   Follow existing formatting and component patterns; keep names descriptive.
 
-## Deployment
-
-Any static hosting that supports Vite builds works:
-
--   GitHub Pages: build with `npm run build` and serve `dist/`
--   Netlify/Vercel: framework preset "Vite"; build command `npm run build`; output `dist`
-
-No secrets are required. Tiles use public OpenStreetMap/CARTO endpoints.
-
 ## Acknowledgements
 
 -   Map tiles © OpenStreetMap contributors and © CARTO
