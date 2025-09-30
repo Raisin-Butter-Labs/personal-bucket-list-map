@@ -34,7 +34,7 @@ Author: Raisin Butter Labs
 
 ```bash
 git clone https://github.com/Raisin-Butter-Labs/personal-bucket-list-map
-cd my-map-memories-main
+cd personal-bucket-list-map
 npm install
 npm run dev
 ```
