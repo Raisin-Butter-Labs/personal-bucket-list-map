@@ -33,7 +33,7 @@ Author: Raisin Butter Labs
 ### Run locally
 
 ```bash
-git clone <your-fork-or-repo-url>
+git clone https://github.com/Raisin-Butter-Labs/personal-bucket-list-map
 cd my-map-memories-main
 npm install
 npm run dev
