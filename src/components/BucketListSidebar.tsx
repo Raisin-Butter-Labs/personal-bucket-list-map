@@ -1,34 +1,26 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Separator } from "@/components/ui/separator";
 import {
-    MapPin,
     Check,
     X,
     Download,
     Upload,
     Share2,
-    Trophy,
-    Target,
     Globe,
     ChevronLeft,
 } from "lucide-react";
 import { BucketListItem } from "@/types/bucketList";
 import { EditLocationDialog } from "./EditLocationDialog";
 import { toast } from "@/hooks/use-toast";
-import html2canvas from "html2canvas";
 
 interface BucketListSidebarProps {
     bucketList: BucketListItem[];
     onUpdateItem: (id: string, updates: Partial<BucketListItem>) => void;
     onDeleteItem: (id: string) => void;
     onImport: (items: BucketListItem[]) => void;
-    mapRef?: React.RefObject<HTMLDivElement>;
     onToggleSidebar: () => void;
 }
 
@@ -37,7 +29,6 @@ export const BucketListSidebar: React.FC<BucketListSidebarProps> = ({
     onUpdateItem,
     onDeleteItem,
     onImport,
-    mapRef,
     onToggleSidebar,
 }) => {
     const [editingItem, setEditingItem] = useState<BucketListItem | null>(null);
@@ -300,18 +291,6 @@ export const BucketListSidebar: React.FC<BucketListSidebarProps> = ({
                 });
             }
         }
-    };
-
-    const downloadImage = (canvas: HTMLCanvasElement) => {
-        const url = canvas.toDataURL();
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = "my-bucket-list-map.png";
-        link.click();
-        toast({
-            title: "Map Downloaded",
-            description: "Your map screenshot has been saved!",
-        });
     };
 
     const getBadges = () => {

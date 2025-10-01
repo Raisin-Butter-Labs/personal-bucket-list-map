@@ -84,7 +84,6 @@ const Index = () => {
                     onUpdateItem={updateItem}
                     onDeleteItem={deleteItem}
                     onImport={importItems}
-                    mapRef={mapRef}
                     onToggleSidebar={() => setSidebarOpen(!sidebarOpen)}
                 />
             </div>
