@@ -66,18 +66,18 @@ const Index = () => {
             {/* Sidebar */}
             <div
                 className={`
-        ${
-            sidebarOpen
-                ? "translate-x-0"
-                : "-translate-x-full lg:-translate-x-full"
-        }
-        fixed lg:relative
-        inset-y-0 left-0
-        z-[1002]
-        w-64 sm:w-72 lg:w-80
-        transition-transform duration-300 ease-in-out
-        ${sidebarOpen ? "block" : "hidden lg:hidden"}
-      `}
+                ${
+                    sidebarOpen
+                        ? "translate-x-0"
+                        : "-translate-x-full lg:-translate-x-full"
+                }
+                fixed lg:relative
+                inset-y-0 left-0
+                z-[1002]
+                w-64 sm:w-72 lg:w-80
+                transition-transform duration-300 ease-in-out
+                ${sidebarOpen ? "block" : "hidden lg:hidden"}
+                `}
             >
                 <BucketListSidebar
                     bucketList={bucketList}
@@ -99,10 +99,10 @@ const Index = () => {
             {/* Map container */}
             <div
                 className={`
-        flex-1 
-        transition-all duration-300 ease-in-out
-        ${sidebarOpen ? "lg:ml-0" : "ml-0"}
-      `}
+                    flex-1 
+                    transition-all duration-300 ease-in-out
+                    ${sidebarOpen ? "lg:ml-0" : "ml-0"}
+                `}
                 ref={mapRef}
             >
                 {/* Toggle button positioned to not block zoom controls */}
