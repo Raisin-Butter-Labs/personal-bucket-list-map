@@ -11,7 +11,6 @@ const Index = () => {
     const [sidebarOpen, setSidebarOpen] = useState(true);
     const mapRef = useRef<HTMLDivElement>(null);
 
-    // Load from localStorage on mount
     useEffect(() => {
         const saved = localStorage.getItem("bucketList");
         if (saved) {
@@ -23,7 +22,6 @@ const Index = () => {
         }
     }, []);
 
-    // Save to localStorage whenever bucket list changes
     useEffect(() => {
         localStorage.setItem("bucketList", JSON.stringify(bucketList));
     }, [bucketList]);
