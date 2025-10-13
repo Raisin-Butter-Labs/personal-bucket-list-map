@@ -103,7 +103,6 @@ const Index = () => {
                 `}
                 ref={mapRef}
             >
-                {/* Toggle button positioned to not block zoom controls */}
                 {!sidebarOpen && (
                     <Button
                         size="sm"
