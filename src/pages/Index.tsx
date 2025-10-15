@@ -93,7 +93,6 @@ const Index = () => {
                 />
             )}
 
-            {/* Map container */}
             <div
                 className={`
                     flex-1 
