@@ -86,7 +86,6 @@ const Index = () => {
                 />
             </div>
 
-            {/* Overlay for mobile */}
             {sidebarOpen && (
                 <div
                     className="fixed inset-0 bg-black/50 z-[1001] lg:hidden"
