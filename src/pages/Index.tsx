@@ -4,7 +4,7 @@ import { BucketListItem } from "@/types/bucketList";
 import { BucketListSidebar } from "@/components/BucketListSidebar";
 import { toast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 
 const Index = () => {
     const [bucketList, setBucketList] = useState<BucketListItem[]>([]);
